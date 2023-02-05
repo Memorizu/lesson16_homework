@@ -1,5 +1,4 @@
 import json
-
 from flask import Blueprint, jsonify, request
 from utils import offers_to_dict
 import app

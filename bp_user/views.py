@@ -1,5 +1,4 @@
 import json
-
 import app
 from flask import Blueprint, jsonify, request
 from utils import *
