@@ -14,13 +14,13 @@ def users_page():
     result = []
     for user in users:
         result.append(user_to_dict(user))
-    return json.dumps(result)
+    return jsonify(result)
 
 
 @user_blueprint.get('/users/<int:uid>')
 def user_page(uid):
     user = user_to_dict(app.User.query.get(uid))
-    return json.dumps(user)
+    return jsonify(user)
 
 
 @user_blueprint.post('/users')
